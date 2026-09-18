@@ -1,0 +1,42 @@
+# Build outputs
+build/
+cmake-build-*/
+
+# Compiled files
+*.o
+*.obj
+*.a
+*.elf
+*.hex
+*.bin
+*.map
+*.d
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+build.ninja
+.ninja_deps
+.ninja_log
+
+# macOS
+.DS_Store
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Local IDE configuration
+/.vscode/
+/.idea/
+/.cursor/
+
+# clangd cache
+/.cache/
+/.clangd-index/
+/.clangd/

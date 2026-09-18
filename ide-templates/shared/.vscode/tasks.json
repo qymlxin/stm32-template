@@ -1,0 +1,98 @@
+{
+  "version": "2.0.0",
+
+  "presentation": {
+    "echo": true,
+    "reveal": "silent",
+    "focus": false,
+    "panel": "dedicated",
+    "showReuseMessage": false,
+    "clear": true,
+    "close": true
+  },
+
+  "tasks": [
+    {
+      "label": "STM32: Configure Debug",
+      "type": "shell",
+      "command": "./scripts/stm32.sh configure",
+      "problemMatcher": []
+    },
+    {
+      "label": "STM32: Build Debug",
+      "type": "shell",
+      "command": "./scripts/stm32.sh build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "STM32: Build Release",
+      "type": "shell",
+      "command": "./scripts/stm32.sh build release",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "STM32: Flash Debug",
+      "type": "shell",
+      "command": "./scripts/stm32.sh flash",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "STM32: Flash Release",
+      "type": "shell",
+      "command": "./scripts/stm32.sh flash release",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "STM32: Rebuild Debug",
+      "type": "shell",
+      "command": "./scripts/stm32.sh rebuild",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "STM32: Rebuild Release",
+      "type": "shell",
+      "command": "./scripts/stm32.sh rebuild release",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "STM32: Clean Debug",
+      "type": "shell",
+      "command": "./scripts/stm32.sh clean",
+      "problemMatcher": []
+    },
+    {
+      "label": "STM32: Clean Release",
+      "type": "shell",
+      "command": "./scripts/stm32.sh clean release",
+      "problemMatcher": []
+    },
+    {
+      "label": "STM32: Firmware Size Debug",
+      "type": "shell",
+      "command": "./scripts/stm32.sh size",
+      "problemMatcher": []
+    },
+    {
+      "label": "STM32: Firmware Size Release",
+      "type": "shell",
+      "command": "./scripts/stm32.sh size release",
+      "problemMatcher": []
+    }
+  ]
+}
