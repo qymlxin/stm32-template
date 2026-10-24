@@ -20,4 +20,7 @@ target_include_directories(app INTERFACE
 target_link_libraries(app INTERFACE
     bsp
     stm32_platform
+    lib
+    third_party
+    components
 )

@@ -34,6 +34,9 @@ add_compile_options(
 
 # 子模块
 add_subdirectory(platform/${STM32_PLATFORM})
+add_subdirectory(lib)
+add_subdirectory(third_party)
+add_subdirectory(components)
 add_subdirectory(bsp)
 add_subdirectory(app)
 
